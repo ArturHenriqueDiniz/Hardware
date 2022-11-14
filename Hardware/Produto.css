@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+       margin: 0;
+
+       padding: 0;
+
+       box-sizing: border-box;
+
+       text-decoration: none;
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+
+.max-width{
+
+   max-width: 1300px;
+
+   padding: 0 80px;
+
+   margin: auto;
+
+}
+
+
+/* navbar  inicio*/
+
+
+.navbar {
+
+    position: fixed;
+
+    width: 100%;
+
+    padding: 10px 0;
+    background-color: black;
+    opacity: 80%;
+    font-family: 'Ubuntu', sans-serif;
+
+    z-index: 999;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.responsiv{
+width: 50px;
+}
+.navbar.sticky{
+
+
+    background: #c99914; 
+
+    padding: 15px 0;
+
+}
+
+
+.navbar .max-width {
+
+   display: flex;
+
+   align-items: center;
+
+   justify-content: space-between;
+
+}
+
+
+.navbar .logo a{
+
+    color: #fff;
+
+    font-size: 35px;
+
+    font-weight: 500;
+
+}
+
+.navbar .logo a span{
+
+    color: #c99914;
+
+    transition: all 0.3s ease;
+
+}
+
+.navbar.sticky .logo a span{
+
+    color: #fff;
+
+}
+
+.navbar .menu li{
+
+   list-style: none;
+
+   display: inline-block;
+
+   color: #c99914;
+}
+
+.navbar .menu li a{
+
+    color: #fff;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    margin-left: 25px;
+
+    transition: color 0.3s ease;
+
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 10px;
+ }
+
+ .navbar .menu li a:hover{
+
+     color: #c99914;
+
+ }
+
+ .navbar.sticky .menu li a:hover {
+
+     color: #fff;
+
+ }
+
+/* Home Inicio */
+.home{
+    background-image: url(a.jpg); 
+    width: 100%; 
+    display: flex; 
+    height: 100vh; 
+    color: #fff;
+    min-height: 100px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+
+    margin: auto 0 auto 40px;
+
+}
+
+.home .home-content .text-1 {
+
+    font-size: 27px;
+}
+
+
+.home .home-content .text-2 {
+
+    font-size: 75px;
+
+    font-weight: 500;
+
+    margin-left: -3px;
+
+}
+
+
+.home .home-content .text-3 {
+
+    font-size: 40px;
+
+    margin: 5px 0;
+
+}
+
+
+.home .home-content .text-3 span {
+
+   color: #c99914;
+
+   font-weight: 500;
+
+
+}
+
+.home .home-content a{
+
+    display: inline-block;
+
+    background-color: #c99914;
+
+    color: #fff;
+
+    font-size: 25px;
+
+    padding: 12px 36px;
+
+    margin-top: 20px;
+
+    border-radius: 6px;
+
+    border:2px solid #c99914;
+
+}
+
+.home .home-content a:hover{
+
+    color: #c99914;
+
+    background: none;
+
+}
+
+
+/*¨¨Todos os Codigos similares¨¨  */
+
+
+section{
+
+    padding: 100px 0;
+
+}
+
+section .title {
+
+    font-family: 'Ubuntu', sans-serif;
+
+    text-align: center;
+
+    font-size: 40px;
+
+    font-weight: 500;
+
+    margin-bottom: 60px;
+
+    padding-bottom: 20px;
+
+    position: relative;
+
+}
+
+section .title::before {
+
+    content: "" ;
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 50%;
+
+    width: 180px;
+
+    height: 3px;
+
+    background: #111;
+
+    transform: translateX(-50%);
+
+}
+
+section .title::after {
+
+    position: absolute;
+
+    bottom: -12px;
+
+    left: 50%;
+
+    font-size: 20px;
+
+    background: #fff;
+
+    color:#c99914;
+
+    padding: 5px;
+
+    transform: translateX(-50%);
+
+}
+
+.briefing {
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.briefing .briefing-content
+
+ {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+/*¨¨Sessão¨¨Sobre¨¨  */
+
+.about .title::after{
+    content: "Quem somos?";
+}
+.about .about-content .left {
+    width: 45%;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{/* TITULO NOME */
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    width: 500px;
+}
+.about .about-content .right .text span{
+    color: #c99914;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{ /* BOTÃO CURRICULO */
+    display: inline-block;
+    background:#c99914 ;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #c99914;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color:#c99914;
+    background: none;
+}
+.about .about-content .left img{ /* TAMANHO DAS IMGS */
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+#p1{
+    font-size: 20px;
+    width: 500px;
+}
+#p2{
+    font-size: 20px;
+    width: 500px;
+}
+#p3{
+    font-size: 20px;
+    width: 500px;
+}
+
+/*--------------------Carrossel Imagems Produtos-------------------------------*/
+
+.ConjuntoImagems {
+    margin: 0;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+.gallery {
+    position: relative;
+    width: 300px;
+    height: 295px;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;         /*35s*/
+  }
+  
+
+  .BorderRadius {
+    border-radius: 50px;
+  }
+
+  /*
+  .BorderRadius:hover {
+    background-image: linear-gradient(to top,rgba(0,0,0,.8),transparent);
+  }
+  */
+
+  @keyframes rotate {
+    from {
+      transform: perspective(1200px) rotateY(0deg);
+    }
+  
+    to {
+      transform: perspective(1200px) rotateY(360deg);
+    }
+  }
+  
+  .gallery span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+  }
+  
+  .gallery span img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  section{
+    padding: 100px 0;
+}
+section .title { /* Sobre */
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+section .title::before {
+    content: "" ;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after { /* QUEM SOMOS */
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    background: #fff;
+    color:#c99914;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+.about{
+    font-family: 'Roboto', sans-serif;
+}
+.about .about-content 
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+/*-------------------------- NÃO MEXA PELO AMOR DE DEUS -----------------------------------*/
+@media screen and (min-width: 1200px) 
+{
+    /* 1 */
+    #nome1{
+        position: absolute;
+        bottom: -120%;
+        left: 35%;
+    }
+    #p1{
+        position: absolute;
+        bottom: -150%;
+        left: 35%;
+    }
+    #Curriculo1{
+        position: absolute;
+        bottom: -160%;
+        left: 35%;
+    }
+    /* 2 */
+    #nome2{
+        position: absolute;
+        bottom: -200%;
+        left: 35%;
+    }
+    #p2{
+        position: absolute;
+        bottom: -230%;
+        left: 35%;
+    }
+    #Curriculo2{
+        position: absolute;
+        bottom: -240%;
+        left: 35%;
+    }
+    /* 3 */
+    #nome3{
+        position: absolute;
+        bottom: -281%;
+        left: 35%;
+    }
+    #p3{
+        position: absolute;
+        bottom: -310%;
+        left: 35%;
+    }
+    #Curriculo3{
+        position: absolute;
+        bottom: -320%;
+        left: 35%;
+    }
+}
